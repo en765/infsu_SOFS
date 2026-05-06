@@ -1,0 +1,164 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="v2VuFV9kEma8I-1RM2P_">
+    <mxGraphModel dx="1227" dy="1051" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="MimyOnHFM_iCth6uydV2-1" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" value="djelatnik" vertex="1">
+          <mxGeometry height="60" width="30" x="170" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="MimyOnHFM_iCth6uydV2-8" parent="1" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;fillColor=none;" value="Prezentacijski sloj" vertex="1">
+          <mxGeometry height="160" width="520" x="280" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="MimyOnHFM_iCth6uydV2-9" parent="1" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;fillColor=none;" value="Poslovni sloj" vertex="1">
+          <mxGeometry height="250" width="592.5" x="207.5" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="MimyOnHFM_iCth6uydV2-10" parent="1" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;fillColor=none;" value="Sloj za pristup podatcima" vertex="1">
+          <mxGeometry height="300" width="622.5" x="228" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="MimyOnHFM_iCth6uydV2-11" parent="1" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;fillColor=none;" value="Baza podataka" vertex="1">
+          <mxGeometry height="100" width="190" x="1000" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="MimyOnHFM_iCth6uydV2-16" edge="1" parent="1" source="MimyOnHFM_iCth6uydV2-1" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;exitX=0.567;exitY=0.617;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.028;entryY=0.6;entryDx=0;entryDy=0;entryPerimeter=0;" target="MimyOnHFM_iCth6uydV2-8" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="320" y="140" as="sourcePoint" />
+            <mxPoint x="320" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MimyOnHFM_iCth6uydV2-19" edge="1" parent="1" source="MimyOnHFM_iCth6uydV2-30" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.075;entryY=0.575;entryDx=0;entryDy=0;entryPerimeter=0;" target="MimyOnHFM_iCth6uydV2-11" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="450" y="570" as="sourcePoint" />
+            <mxPoint x="610" y="570" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MimyOnHFM_iCth6uydV2-20" parent="1" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;" value="&lt;div&gt;Forma&lt;/div&gt;&lt;div&gt;paketa&lt;/div&gt;" vertex="1">
+          <mxGeometry height="50" width="100" x="320" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="MimyOnHFM_iCth6uydV2-21" parent="1" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;" value="Forma članarine i uplata" vertex="1">
+          <mxGeometry height="50" width="100" x="620" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="MimyOnHFM_iCth6uydV2-22" parent="1" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;" value="PaketService" vertex="1">
+          <mxGeometry height="40" width="110" x="235" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="MimyOnHFM_iCth6uydV2-23" parent="1" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;" value="ClanarinaService" vertex="1">
+          <mxGeometry height="40" width="130" x="570" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="MimyOnHFM_iCth6uydV2-24" parent="1" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;" value="UplataService" vertex="1">
+          <mxGeometry height="40" width="110" x="460" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="MimyOnHFM_iCth6uydV2-25" parent="1" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;" value="&lt;div&gt;Validacija&amp;nbsp;&lt;/div&gt;&lt;div&gt;poslovnih&lt;/div&gt;&lt;div&gt;pravila&lt;/div&gt;" vertex="1">
+          <mxGeometry height="50" width="100" x="340" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="MimyOnHFM_iCth6uydV2-26" parent="1" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;" value="PaketRepository" vertex="1">
+          <mxGeometry height="40" width="130" x="235" y="710" as="geometry" />
+        </mxCell>
+        <mxCell id="MimyOnHFM_iCth6uydV2-27" parent="1" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;" value="ClanarinaRepository" vertex="1">
+          <mxGeometry height="40" width="160" x="590" y="840" as="geometry" />
+        </mxCell>
+        <mxCell id="MimyOnHFM_iCth6uydV2-29" parent="1" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;" value="UplataRepositroy" vertex="1">
+          <mxGeometry height="40" width="130" x="450" y="760" as="geometry" />
+        </mxCell>
+        <mxCell id="MimyOnHFM_iCth6uydV2-30" parent="1" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;" value="ClanRepository" vertex="1">
+          <mxGeometry height="40" width="120" x="700" y="660" as="geometry" />
+        </mxCell>
+        <mxCell id="MimyOnHFM_iCth6uydV2-31" parent="1" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;" value="&lt;div&gt;PostgreSQL&lt;/div&gt;&lt;div&gt;baza podataka&lt;/div&gt;" vertex="1">
+          <mxGeometry height="50" width="100" x="1050" y="670" as="geometry" />
+        </mxCell>
+        <mxCell id="MimyOnHFM_iCth6uydV2-34" edge="1" parent="1" source="MimyOnHFM_iCth6uydV2-20" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" target="MimyOnHFM_iCth6uydV2-22" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="520" y="290" as="sourcePoint" />
+            <mxPoint x="680" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MimyOnHFM_iCth6uydV2-35" edge="1" parent="1" source="MimyOnHFM_iCth6uydV2-21" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;exitX=0.75;exitY=1;exitDx=0;exitDy=0;" target="MimyOnHFM_iCth6uydV2-23" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="520" y="290" as="sourcePoint" />
+            <mxPoint x="680" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MimyOnHFM_iCth6uydV2-36" edge="1" parent="1" source="MimyOnHFM_iCth6uydV2-21" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.618;entryY=0.05;entryDx=0;entryDy=0;entryPerimeter=0;" target="MimyOnHFM_iCth6uydV2-24" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="520" y="290" as="sourcePoint" />
+            <mxPoint x="680" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MimyOnHFM_iCth6uydV2-37" edge="1" parent="1" source="MimyOnHFM_iCth6uydV2-22" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" target="MimyOnHFM_iCth6uydV2-26" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="520" y="520" as="sourcePoint" />
+            <mxPoint x="680" y="520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MimyOnHFM_iCth6uydV2-38" edge="1" parent="1" source="MimyOnHFM_iCth6uydV2-24" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="MimyOnHFM_iCth6uydV2-29" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="520" y="520" as="sourcePoint" />
+            <mxPoint x="680" y="520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MimyOnHFM_iCth6uydV2-39" edge="1" parent="1" source="MimyOnHFM_iCth6uydV2-23" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" target="MimyOnHFM_iCth6uydV2-27" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="520" y="520" as="sourcePoint" />
+            <mxPoint x="680" y="520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MimyOnHFM_iCth6uydV2-41" edge="1" parent="1" source="MimyOnHFM_iCth6uydV2-27" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;entryX=0;entryY=0.75;entryDx=10;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="MimyOnHFM_iCth6uydV2-11" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="630" y="550" as="sourcePoint" />
+            <mxPoint x="790" y="550" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MimyOnHFM_iCth6uydV2-42" edge="1" parent="1" source="MimyOnHFM_iCth6uydV2-29" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;entryX=0.037;entryY=0.69;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="MimyOnHFM_iCth6uydV2-11" value="">
+          <mxGeometry relative="1" width="160" x="-0.0015" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="490" y="630" as="sourcePoint" />
+            <mxPoint x="650" y="630" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MimyOnHFM_iCth6uydV2-43" edge="1" parent="1" source="MimyOnHFM_iCth6uydV2-26" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.047;entryY=0.62;entryDx=0;entryDy=0;entryPerimeter=0;" target="MimyOnHFM_iCth6uydV2-11" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="490" y="630" as="sourcePoint" />
+            <mxPoint x="650" y="630" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MimyOnHFM_iCth6uydV2-46" edge="1" parent="1" source="MimyOnHFM_iCth6uydV2-24" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;exitX=0.014;exitY=1.075;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;exitPerimeter=0;" target="MimyOnHFM_iCth6uydV2-25" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="430" y="350" as="sourcePoint" />
+            <mxPoint x="438" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MimyOnHFM_iCth6uydV2-47" edge="1" parent="1" source="MimyOnHFM_iCth6uydV2-22" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="MimyOnHFM_iCth6uydV2-25" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="430" y="350" as="sourcePoint" />
+            <mxPoint x="590" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MimyOnHFM_iCth6uydV2-48" parent="1" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;" value="ClanService" vertex="1">
+          <mxGeometry height="40" width="100" x="690" y="325" as="geometry" />
+        </mxCell>
+        <mxCell id="MimyOnHFM_iCth6uydV2-49" edge="1" parent="1" source="MimyOnHFM_iCth6uydV2-21" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;exitX=1;exitY=1;exitDx=0;exitDy=0;" target="MimyOnHFM_iCth6uydV2-48" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="460" y="430" as="sourcePoint" />
+            <mxPoint x="620" y="430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MimyOnHFM_iCth6uydV2-50" edge="1" parent="1" source="MimyOnHFM_iCth6uydV2-48" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;exitX=0.75;exitY=1;exitDx=0;exitDy=0;" target="MimyOnHFM_iCth6uydV2-30" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="460" y="430" as="sourcePoint" />
+            <mxPoint x="620" y="430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MimyOnHFM_iCth6uydV2-51" edge="1" parent="1" source="MimyOnHFM_iCth6uydV2-23" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;exitX=0.073;exitY=0.65;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;exitPerimeter=0;" target="MimyOnHFM_iCth6uydV2-25" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="460" y="380" as="sourcePoint" />
+            <mxPoint x="620" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MimyOnHFM_iCth6uydV2-53" edge="1" parent="1" source="MimyOnHFM_iCth6uydV2-48" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;exitX=0.063;exitY=0.661;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" target="MimyOnHFM_iCth6uydV2-25" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="460" y="380" as="sourcePoint" />
+            <mxPoint x="620" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
