@@ -37,3 +37,8 @@
 /Users/enesek/Documents/infsus/infsu_SOFS/FitnessStudio.Web/FitnessStudio.Web/obj/Debug/net8.0/FitnessStudio.Web.pdb
 /Users/enesek/Documents/infsus/infsu_SOFS/FitnessStudio.Web/FitnessStudio.Web/obj/Debug/net8.0/FitnessStudio.Web.genruntimeconfig.cache
 /Users/enesek/Documents/infsus/infsu_SOFS/FitnessStudio.Web/FitnessStudio.Web/obj/Debug/net8.0/ref/FitnessStudio.Web.dll
+/Users/enesek/Documents/infsus/infsu_SOFS/FitnessStudio.Web/FitnessStudio.Web/bin/Debug/net8.0/Dapper.dll
+/Users/enesek/Documents/infsus/infsu_SOFS/FitnessStudio.Web/FitnessStudio.Web/bin/Debug/net8.0/Microsoft.Extensions.Configuration.Abstractions.dll
+/Users/enesek/Documents/infsus/infsu_SOFS/FitnessStudio.Web/FitnessStudio.Web/bin/Debug/net8.0/Microsoft.Extensions.Primitives.dll
+/Users/enesek/Documents/infsus/infsu_SOFS/FitnessStudio.Web/FitnessStudio.Web/bin/Debug/net8.0/Npgsql.dll
+/Users/enesek/Documents/infsus/infsu_SOFS/FitnessStudio.Web/FitnessStudio.Web/bin/Debug/net8.0/System.Diagnostics.DiagnosticSource.dll

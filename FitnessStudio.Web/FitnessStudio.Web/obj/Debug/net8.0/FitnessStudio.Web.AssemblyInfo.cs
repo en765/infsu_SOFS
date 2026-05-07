@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FitnessStudio.Web")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f51b1de41adb395beec3453afaf68dd221d4e1f3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+808421a52678187d18a29ed5856fd7e154fd133b")]
 [assembly: System.Reflection.AssemblyProductAttribute("FitnessStudio.Web")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FitnessStudio.Web")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

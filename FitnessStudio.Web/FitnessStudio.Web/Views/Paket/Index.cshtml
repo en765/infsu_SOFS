@@ -1,0 +1,34 @@
+@model IEnumerable<FitnessStudio.Domain.Models.Paket>
+
+@{
+    ViewData["Title"] = "Paketi";
+}
+
+<h1>Paketi</h1>
+
+<form method="get" asp-action="Index">
+    <input type="text" name="search" value="@ViewBag.Search" placeholder="Pretraži po nazivu" />
+    <button type="submit">Pretraži</button>
+</form>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Naziv</th>
+            <th>Broj treninga</th>
+            <th>Cijena</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var paket in Model)
+        {
+            <tr>
+                <td>@paket.PaketId</td>
+                <td>@paket.Naziv</td>
+                <td>@paket.BrojTreninga</td>
+                <td>@paket.Cijena</td>
+            </tr>
+        }
+    </tbody>
+</table>
