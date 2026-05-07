@@ -1,0 +1,56 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "FitnessStudio.Business/1.0.0": {
+        "dependencies": {
+          "FitnessStudio.Data": "1.0.0",
+          "FitnessStudio.Domain": "1.0.0"
+        },
+        "runtime": {
+          "FitnessStudio.Business.dll": {}
+        }
+      },
+      "FitnessStudio.Data/1.0.0": {
+        "dependencies": {
+          "FitnessStudio.Domain": "1.0.0"
+        },
+        "runtime": {
+          "FitnessStudio.Data.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "FitnessStudio.Domain/1.0.0": {
+        "runtime": {
+          "FitnessStudio.Domain.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "FitnessStudio.Business/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FitnessStudio.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FitnessStudio.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

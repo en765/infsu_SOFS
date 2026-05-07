@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\FitnessStudio.Business\FitnessStudio.Business.csproj" />
+    <ProjectReference Include="..\FitnessStudio.Data\FitnessStudio.Data.csproj" />
+    <ProjectReference Include="..\FitnessStudio.Domain\FitnessStudio.Domain.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+</Project>

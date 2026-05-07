@@ -1,0 +1,12 @@
+/Users/enesek/Documents/infsus/infsu_SOFS/FitnessStudio.Web/FitnessStudio.Domain/bin/Debug/net8.0/FitnessStudio.Domain.deps.json
+/Users/enesek/Documents/infsus/infsu_SOFS/FitnessStudio.Web/FitnessStudio.Domain/bin/Debug/net8.0/FitnessStudio.Domain.dll
+/Users/enesek/Documents/infsus/infsu_SOFS/FitnessStudio.Web/FitnessStudio.Domain/bin/Debug/net8.0/FitnessStudio.Domain.pdb
+/Users/enesek/Documents/infsus/infsu_SOFS/FitnessStudio.Web/FitnessStudio.Domain/obj/Debug/net8.0/FitnessStudio.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/enesek/Documents/infsus/infsu_SOFS/FitnessStudio.Web/FitnessStudio.Domain/obj/Debug/net8.0/FitnessStudio.Domain.AssemblyInfoInputs.cache
+/Users/enesek/Documents/infsus/infsu_SOFS/FitnessStudio.Web/FitnessStudio.Domain/obj/Debug/net8.0/FitnessStudio.Domain.AssemblyInfo.cs
+/Users/enesek/Documents/infsus/infsu_SOFS/FitnessStudio.Web/FitnessStudio.Domain/obj/Debug/net8.0/FitnessStudio.Domain.csproj.CoreCompileInputs.cache
+/Users/enesek/Documents/infsus/infsu_SOFS/FitnessStudio.Web/FitnessStudio.Domain/obj/Debug/net8.0/FitnessStudio.Domain.sourcelink.json
+/Users/enesek/Documents/infsus/infsu_SOFS/FitnessStudio.Web/FitnessStudio.Domain/obj/Debug/net8.0/FitnessStudio.Domain.dll
+/Users/enesek/Documents/infsus/infsu_SOFS/FitnessStudio.Web/FitnessStudio.Domain/obj/Debug/net8.0/refint/FitnessStudio.Domain.dll
+/Users/enesek/Documents/infsus/infsu_SOFS/FitnessStudio.Web/FitnessStudio.Domain/obj/Debug/net8.0/FitnessStudio.Domain.pdb
+/Users/enesek/Documents/infsus/infsu_SOFS/FitnessStudio.Web/FitnessStudio.Domain/obj/Debug/net8.0/ref/FitnessStudio.Domain.dll

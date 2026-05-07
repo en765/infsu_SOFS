@@ -1,0 +1,16 @@
+/Users/enesek/Documents/infsus/infsu_SOFS/FitnessStudio.Web/FitnessStudio.Data/bin/Debug/net8.0/FitnessStudio.Data.deps.json
+/Users/enesek/Documents/infsus/infsu_SOFS/FitnessStudio.Web/FitnessStudio.Data/bin/Debug/net8.0/FitnessStudio.Data.dll
+/Users/enesek/Documents/infsus/infsu_SOFS/FitnessStudio.Web/FitnessStudio.Data/bin/Debug/net8.0/FitnessStudio.Data.pdb
+/Users/enesek/Documents/infsus/infsu_SOFS/FitnessStudio.Web/FitnessStudio.Data/bin/Debug/net8.0/FitnessStudio.Domain.dll
+/Users/enesek/Documents/infsus/infsu_SOFS/FitnessStudio.Web/FitnessStudio.Data/bin/Debug/net8.0/FitnessStudio.Domain.pdb
+/Users/enesek/Documents/infsus/infsu_SOFS/FitnessStudio.Web/FitnessStudio.Data/obj/Debug/net8.0/FitnessStudio.Data.csproj.AssemblyReference.cache
+/Users/enesek/Documents/infsus/infsu_SOFS/FitnessStudio.Web/FitnessStudio.Data/obj/Debug/net8.0/FitnessStudio.Data.GeneratedMSBuildEditorConfig.editorconfig
+/Users/enesek/Documents/infsus/infsu_SOFS/FitnessStudio.Web/FitnessStudio.Data/obj/Debug/net8.0/FitnessStudio.Data.AssemblyInfoInputs.cache
+/Users/enesek/Documents/infsus/infsu_SOFS/FitnessStudio.Web/FitnessStudio.Data/obj/Debug/net8.0/FitnessStudio.Data.AssemblyInfo.cs
+/Users/enesek/Documents/infsus/infsu_SOFS/FitnessStudio.Web/FitnessStudio.Data/obj/Debug/net8.0/FitnessStudio.Data.csproj.CoreCompileInputs.cache
+/Users/enesek/Documents/infsus/infsu_SOFS/FitnessStudio.Web/FitnessStudio.Data/obj/Debug/net8.0/FitnessStudio.Data.sourcelink.json
+/Users/enesek/Documents/infsus/infsu_SOFS/FitnessStudio.Web/FitnessStudio.Data/obj/Debug/net8.0/FitnessS.D05399AB.Up2Date
+/Users/enesek/Documents/infsus/infsu_SOFS/FitnessStudio.Web/FitnessStudio.Data/obj/Debug/net8.0/FitnessStudio.Data.dll
+/Users/enesek/Documents/infsus/infsu_SOFS/FitnessStudio.Web/FitnessStudio.Data/obj/Debug/net8.0/refint/FitnessStudio.Data.dll
+/Users/enesek/Documents/infsus/infsu_SOFS/FitnessStudio.Web/FitnessStudio.Data/obj/Debug/net8.0/FitnessStudio.Data.pdb
+/Users/enesek/Documents/infsus/infsu_SOFS/FitnessStudio.Web/FitnessStudio.Data/obj/Debug/net8.0/ref/FitnessStudio.Data.dll
