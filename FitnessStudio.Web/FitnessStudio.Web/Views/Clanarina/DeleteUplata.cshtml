@@ -1,0 +1,31 @@
+@model FitnessStudio.Domain.Models.Uplata
+
+@{
+    ViewData["Title"] = "Obriši uplatu";
+}
+
+<h1>Obriši uplatu</h1>
+
+<div class="alert alert-warning">
+    Jeste li sigurni da želite obrisati ovu uplatu?
+</div>
+
+<div class="mb-2">
+    <strong>ID:</strong> @Model.UplataId
+</div>
+
+<div class="mb-2">
+    <strong>Datum:</strong> @Model.Datum.ToString("dd.MM.yyyy.")
+</div>
+
+<div class="mb-3">
+    <strong>Iznos:</strong> @Model.Iznos
+</div>
+
+<form asp-action="DeleteUplata" method="post">
+    <input type="hidden" name="uplataId" value="@Model.UplataId" />
+    <input type="hidden" name="clanarinaId" value="@Model.ClanarinaId" />
+
+    <button type="submit" class="btn btn-danger">Obriši</button>
+    <a asp-action="Index" asp-route-selectedClanarinaId="@Model.ClanarinaId" class="btn btn-secondary">Odustani</a>
+</form>

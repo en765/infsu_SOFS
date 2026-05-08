@@ -81,42 +81,134 @@
 
 <h3 class="mt-4">Uplate za odabranu članarinu</h3>
 
-@if (Model.SelectedClanarinaId.HasValue)
+@if (Model.SelectedClanarinaId.HasValue && Model.OdabraniPaketCijena.HasValue)
 {
-    <p><strong>Odabrana članarina ID:</strong> @Model.SelectedClanarinaId</p>
+    <div class="card mb-3">
+        <div class="card-body">
+            <h5 class="card-title">Sažetak članarine</h5>
+            <p><strong>Paket:</strong> @Model.OdabraniPaketNaziv</p>
+            <p><strong>Cijena paketa:</strong> @Model.OdabraniPaketCijena?.ToString("0.00")</p>
+            <p><strong>Ukupno uplaćeno:</strong> @Model.UkupnoUplaceno.ToString("0.00")</p>
+            <p><strong>Preostalo za uplatu:</strong> @Model.PreostaloZaUplatu.ToString("0.00")</p>
+        </div>
+    </div>
+}
+@if (Model.SelectedClanarinaId.HasValue)
+
+{
+
+    <p>
+
+        <strong>Odabrana članarina ID:</strong> @Model.SelectedClanarinaId
+
+    </p>
+
+    <p>
+
+        <a asp-action="CreateUplata"
+
+           asp-route-clanarinaId="@Model.SelectedClanarinaId"
+
+           class="btn btn-primary">
+
+            Nova uplata
+
+        </a>
+
+    </p>
 
     @if (Model.Uplate.Any())
+
     {
+
         <table class="table table-bordered table-striped">
+
             <thead>
+
                 <tr>
+
                     <th>ID</th>
+
                     <th>Datum</th>
+
                     <th>Iznos</th>
+
+                    <th>Akcije</th>
+
                 </tr>
+
             </thead>
+
             <tbody>
+
                 @foreach (var uplata in Model.Uplate)
+
                 {
+
                     <tr>
+
                         <td>@uplata.UplataId</td>
+
                         <td>@uplata.Datum.ToString("dd.MM.yyyy.")</td>
+
                         <td>@uplata.Iznos</td>
+
+                        <td>
+
+                            <a asp-action="EditUplata"
+
+                               asp-route-id="@uplata.UplataId"
+
+                               class="btn btn-sm btn-warning">
+
+                                Uredi
+
+                            </a>
+
+                            <a asp-action="DeleteUplata"
+
+                               asp-route-id="@uplata.UplataId"
+
+                               class="btn btn-sm btn-danger">
+
+                                Obriši
+
+                            </a>
+
+                        </td>
+
                     </tr>
+
                 }
+
             </tbody>
+
         </table>
+
     }
+
     else
+
     {
+
         <div class="alert alert-info">
+
             Za odabranu članarinu nema evidentiranih uplata.
+
         </div>
+
     }
+
 }
+
 else
+
 {
+
     <div class="alert alert-secondary">
+
         Nije odabrana nijedna članarina.
+
     </div>
+
 }

@@ -1,0 +1,28 @@
+@model FitnessStudio.Web.ViewModels.UplataFormViewModel
+
+@{
+    ViewData["Title"] = "Nova uplata";
+}
+
+<h1>Nova uplata</h1>
+
+<form asp-action="CreateUplata" method="post">
+    <input type="hidden" asp-for="ClanarinaId" />
+
+    <div asp-validation-summary="All" class="text-danger"></div>
+
+    <div class="mb-3">
+        <label asp-for="Iznos" class="form-label"></label>
+        <input asp-for="Iznos" class="form-control" />
+        <span asp-validation-for="Iznos" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Datum" class="form-label"></label>
+        <input asp-for="Datum" class="form-control" type="date" />
+        <span asp-validation-for="Datum" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Spremi</button>
+    <a asp-action="Index" asp-route-selectedClanarinaId="@Model.ClanarinaId" class="btn btn-secondary">Odustani</a>
+</form>
