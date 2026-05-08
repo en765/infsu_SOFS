@@ -7,6 +7,6 @@ namespace FitnessStudio.Domain.Models
         public int PaketId { get; set; }
         public DateTime DatumPocetka { get; set; }
         public DateTime DatumZavrsetka { get; set; }
-        public string Status { get; set; } = string.Empty;
+        public StatusClanarine Status { get; set; }
     }
 }

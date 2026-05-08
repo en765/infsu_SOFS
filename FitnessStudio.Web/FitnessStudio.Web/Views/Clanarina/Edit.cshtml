@@ -1,0 +1,51 @@
+@model FitnessStudio.Web.ViewModels.ClanarinaFormViewModel
+@using FitnessStudio.Domain.Models
+
+@{
+    ViewData["Title"] = "Uredi članarinu";
+}
+
+<h1>Uredi članarinu</h1>
+
+<form asp-action="Edit" method="post">
+    <input type="hidden" asp-for="ClanarinaId" />
+
+    <div asp-validation-summary="All" class="text-danger"></div>
+
+    <div class="mb-3">
+        <label asp-for="ClanId" class="form-label">Član</label>
+        <select asp-for="ClanId" asp-items="Model.Clanovi" class="form-select">
+            <option value="">-- Odaberi člana --</option>
+        </select>
+        <span asp-validation-for="ClanId" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="PaketId" class="form-label">Paket</label>
+        <select asp-for="PaketId" asp-items="Model.Paketi" class="form-select">
+            <option value="">-- Odaberi paket --</option>
+        </select>
+        <span asp-validation-for="PaketId" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="DatumPocetka" class="form-label"></label>
+        <input asp-for="DatumPocetka" class="form-control" type="date" />
+        <span asp-validation-for="DatumPocetka" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="DatumZavrsetka" class="form-label"></label>
+        <input asp-for="DatumZavrsetka" class="form-control" type="date" />
+        <span asp-validation-for="DatumZavrsetka" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Status" class="form-label"></label>
+        <select asp-for="Status" asp-items="Html.GetEnumSelectList<StatusClanarine>()" class="form-select"></select>
+        <span asp-validation-for="Status" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Spremi promjene</button>
+    <a asp-action="Index" class="btn btn-secondary">Odustani</a>
+</form>

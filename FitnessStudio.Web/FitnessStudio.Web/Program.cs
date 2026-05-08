@@ -15,6 +15,14 @@ builder.Services.AddScoped<DatabaseConnectionFactory>();
 builder.Services.AddScoped<IPaketRepository, PaketRepository>();
 builder.Services.AddScoped<IPaketService, PaketService>();
 
+builder.Services.AddScoped<IClanRepository, ClanRepository>();
+builder.Services.AddScoped<IClanarinaRepository, ClanarinaRepository>();
+builder.Services.AddScoped<IUplataRepository, UplataRepository>();
+
+builder.Services.AddScoped<IClanService, ClanService>();
+builder.Services.AddScoped<IClanarinaService, ClanarinaService>();
+builder.Services.AddScoped<IUplataService, UplataService>();
+
 var app = builder.Build();
 
 var supportedCultures = new[] { new CultureInfo("hr-HR") };

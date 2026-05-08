@@ -1,0 +1,37 @@
+@model FitnessStudio.Domain.Models.Clanarina
+
+@{
+    ViewData["Title"] = "Obriši članarinu";
+}
+
+<h1>Obriši članarinu</h1>
+
+<div class="alert alert-warning">
+    Jeste li sigurni da želite obrisati ovu članarinu?
+</div>
+
+<div class="mb-2">
+    <strong>Član:</strong> @ViewBag.ClanNaziv
+</div>
+
+<div class="mb-2">
+    <strong>Paket:</strong> @ViewBag.PaketNaziv
+</div>
+
+<div class="mb-2">
+    <strong>Datum početka:</strong> @Model.DatumPocetka.ToString("dd.MM.yyyy.")
+</div>
+
+<div class="mb-2">
+    <strong>Datum završetka:</strong> @Model.DatumZavrsetka.ToString("dd.MM.yyyy.")
+</div>
+
+<div class="mb-3">
+    <strong>Status:</strong> @Model.Status
+</div>
+
+<form asp-action="Delete" method="post">
+    <input type="hidden" name="clanarinaId" value="@Model.ClanarinaId" />
+    <button type="submit" class="btn btn-danger">Obriši</button>
+    <a asp-action="Index" class="btn btn-secondary">Odustani</a>
+</form>
