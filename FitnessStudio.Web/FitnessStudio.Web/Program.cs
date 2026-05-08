@@ -3,6 +3,8 @@ using FitnessStudio.Data.Interfaces;
 using FitnessStudio.Data.Repositories;
 using FitnessStudio.Business.Interfaces;
 using FitnessStudio.Business.Services;
+using System.Globalization;
+using Microsoft.AspNetCore.Localization;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,6 +16,17 @@ builder.Services.AddScoped<IPaketRepository, PaketRepository>();
 builder.Services.AddScoped<IPaketService, PaketService>();
 
 var app = builder.Build();
+
+var supportedCultures = new[] { new CultureInfo("hr-HR") };
+
+var localizationOptions = new RequestLocalizationOptions
+{
+    DefaultRequestCulture = new RequestCulture("hr-HR"),
+    SupportedCultures = supportedCultures,
+    SupportedUICultures = supportedCultures
+};
+
+app.UseRequestLocalization(localizationOptions);
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())

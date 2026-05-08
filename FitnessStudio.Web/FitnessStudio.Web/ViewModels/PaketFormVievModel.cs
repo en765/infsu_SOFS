@@ -1,8 +1,8 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace FitnessStudio.Domain.Models
+namespace FitnessStudio.Web.ViewModels
 {
-    public class Paket
+    public class PaketFormViewModel
     {
         public int PaketId { get; set; }
 
@@ -12,7 +12,7 @@ namespace FitnessStudio.Domain.Models
         [Range(1, int.MaxValue, ErrorMessage = "Broj treninga mora biti veći od 0.")]
         public int BrojTreninga { get; set; }
 
-        [Range(typeof(decimal), "0,01", "9999999", ErrorMessage = "Cijena mora biti veća od 0.")]
-        public decimal Cijena { get; set; }
+        [Required(ErrorMessage = "Cijena je obavezna.")]
+        public string Cijena { get; set; } = string.Empty;
     }
 }

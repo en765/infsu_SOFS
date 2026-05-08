@@ -59,7 +59,9 @@ namespace FitnessStudio.Data.Repositories
                     broj_treninga AS BrojTreninga,
                     cijena AS Cijena
                 FROM Paket
-                WHERE @Naziv IS NULL OR naziv ILIKE '%' || @Naziv || '%'
+                WHERE @Naziv IS NULL 
+                OR @Naziv = '' 
+                OR naziv ILIKE '%' || @Naziv || '%'
                 ORDER BY naziv;
                 """;
 
