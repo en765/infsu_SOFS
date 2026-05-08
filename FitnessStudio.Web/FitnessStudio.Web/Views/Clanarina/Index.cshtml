@@ -49,7 +49,7 @@
         {
             var isSelected = Model.SelectedClanarinaId == clanarina.ClanarinaId;
 
-            <tr class="@(isSelected ? "table-primary" : "")">
+            <tr id="clanarina-@clanarina.ClanarinaId" class="@(isSelected ? "selected-row" : "")">
                 <td>@clanarina.ClanarinaId</td>
                 <td>@Model.Clanovi.GetValueOrDefault(clanarina.ClanId, "Nepoznat član")</td>
                 <td>@Model.Paketi.GetValueOrDefault(clanarina.PaketId, "Nepoznat paket")</td>
@@ -57,11 +57,9 @@
                 <td>@clanarina.DatumZavrsetka.ToString("dd.MM.yyyy.")</td>
                 <td>@clanarina.Status</td>
                 <td>
-                    <a asp-action="Index"
-                       asp-route-search="@Model.Search"
-                       asp-route-selectedClanarinaId="@clanarina.ClanarinaId"
-                       class="btn btn-sm btn-info">
-                        Uplate
+                    <a href="@Url.Action("Index", new { search = Model.Search, selectedClanarinaId = clanarina.ClanarinaId })#clanarina-@clanarina.ClanarinaId"
+                    class="btn btn-sm btn-info">
+                        Detalji
                     </a>
                     <a asp-action="Edit"
                        asp-route-id="@clanarina.ClanarinaId"
@@ -75,140 +73,79 @@
                     </a>
                 </td>
             </tr>
+
+            @if (isSelected)
+            {
+                    <tr class="detail-row">
+                        <td colspan="7" class="p-0">
+                            <div class="detail-box">
+                            @if (Model.OdabraniPaketCijena.HasValue)
+                            {
+                                <div class="card mb-3">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Sažetak članarine</h5>
+                                        <p><strong>Paket:</strong> @Model.OdabraniPaketNaziv</p>
+                                        <p><strong>Cijena paketa:</strong> @Model.OdabraniPaketCijena?.ToString("0.00")</p>
+                                        <p><strong>Ukupno uplaćeno:</strong> @Model.UkupnoUplaceno.ToString("0.00")</p>
+                                        <p><strong>Preostalo za uplatu:</strong> @Model.PreostaloZaUplatu.ToString("0.00")</p>
+                                    </div>
+                                </div>
+                            }
+
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <h5 class="mb-0">Uplate</h5>
+                                <a asp-action="CreateUplata"
+                                   asp-route-clanarinaId="@clanarina.ClanarinaId"
+                                   class="btn btn-primary btn-sm">
+                                    Nova uplata
+                                </a>
+                            </div>
+
+                            @if (Model.Uplate.Any())
+                            {
+                                <table class="table table-bordered table-striped mb-0">
+                                    <thead>
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>Datum</th>
+                                            <th>Iznos</th>
+                                            <th>Akcije</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @foreach (var uplata in Model.Uplate)
+                                        {
+                                            <tr>
+                                                <td>@uplata.UplataId</td>
+                                                <td>@uplata.Datum.ToString("dd.MM.yyyy.")</td>
+                                                <td>@uplata.Iznos.ToString("0.00")</td>
+                                                <td>
+                                                    <a asp-action="EditUplata"
+                                                       asp-route-id="@uplata.UplataId"
+                                                       class="btn btn-sm btn-warning">
+                                                        Uredi
+                                                    </a>
+                                                    <a asp-action="DeleteUplata"
+                                                       asp-route-id="@uplata.UplataId"
+                                                       class="btn btn-sm btn-danger">
+                                                        Obriši
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        }
+                                    </tbody>
+                                </table>
+                            }
+                            else
+                            {
+                                <div class="alert alert-info mb-0">
+                                    Za odabranu članarinu nema evidentiranih uplata.
+                                </div>
+                            }
+                        </div>
+                    </td>
+                </tr>
+            }
         }
     </tbody>
 </table>
-
-<h3 class="mt-4">Uplate za odabranu članarinu</h3>
-
-@if (Model.SelectedClanarinaId.HasValue && Model.OdabraniPaketCijena.HasValue)
-{
-    <div class="card mb-3">
-        <div class="card-body">
-            <h5 class="card-title">Sažetak članarine</h5>
-            <p><strong>Paket:</strong> @Model.OdabraniPaketNaziv</p>
-            <p><strong>Cijena paketa:</strong> @Model.OdabraniPaketCijena?.ToString("0.00")</p>
-            <p><strong>Ukupno uplaćeno:</strong> @Model.UkupnoUplaceno.ToString("0.00")</p>
-            <p><strong>Preostalo za uplatu:</strong> @Model.PreostaloZaUplatu.ToString("0.00")</p>
-        </div>
-    </div>
-}
-@if (Model.SelectedClanarinaId.HasValue)
-
-{
-
-    <p>
-
-        <strong>Odabrana članarina ID:</strong> @Model.SelectedClanarinaId
-
-    </p>
-
-    <p>
-
-        <a asp-action="CreateUplata"
-
-           asp-route-clanarinaId="@Model.SelectedClanarinaId"
-
-           class="btn btn-primary">
-
-            Nova uplata
-
-        </a>
-
-    </p>
-
-    @if (Model.Uplate.Any())
-
-    {
-
-        <table class="table table-bordered table-striped">
-
-            <thead>
-
-                <tr>
-
-                    <th>ID</th>
-
-                    <th>Datum</th>
-
-                    <th>Iznos</th>
-
-                    <th>Akcije</th>
-
-                </tr>
-
-            </thead>
-
-            <tbody>
-
-                @foreach (var uplata in Model.Uplate)
-
-                {
-
-                    <tr>
-
-                        <td>@uplata.UplataId</td>
-
-                        <td>@uplata.Datum.ToString("dd.MM.yyyy.")</td>
-
-                        <td>@uplata.Iznos</td>
-
-                        <td>
-
-                            <a asp-action="EditUplata"
-
-                               asp-route-id="@uplata.UplataId"
-
-                               class="btn btn-sm btn-warning">
-
-                                Uredi
-
-                            </a>
-
-                            <a asp-action="DeleteUplata"
-
-                               asp-route-id="@uplata.UplataId"
-
-                               class="btn btn-sm btn-danger">
-
-                                Obriši
-
-                            </a>
-
-                        </td>
-
-                    </tr>
-
-                }
-
-            </tbody>
-
-        </table>
-
-    }
-
-    else
-
-    {
-
-        <div class="alert alert-info">
-
-            Za odabranu članarinu nema evidentiranih uplata.
-
-        </div>
-
-    }
-
-}
-
-else
-
-{
-
-    <div class="alert alert-secondary">
-
-        Nije odabrana nijedna članarina.
-
-    </div>
-
-}

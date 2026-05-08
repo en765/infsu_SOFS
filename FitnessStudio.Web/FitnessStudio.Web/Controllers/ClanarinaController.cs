@@ -38,10 +38,6 @@ namespace FitnessStudio.Web.Controllers
             var paketi = _paketService.GetAll()
                 .ToDictionary(p => p.PaketId, p => p.Naziv);
 
-            if (!selectedClanarinaId.HasValue)
-            {
-                selectedClanarinaId = clanarine.FirstOrDefault()?.ClanarinaId;
-            }
             var uplate = selectedClanarinaId.HasValue
                 ? _uplataService.GetByClanarinaId(selectedClanarinaId.Value)
                 : Enumerable.Empty<Uplata>();

@@ -1,22 +1,325 @@
+/* Globalne boje */
+:root {
+    --pink-50: #fff7fb;
+    --pink-100: #fdebf3;
+    --pink-200: #f8d7e6;
+    --pink-300: #efb7cf;
+    --pink-400: #e88ab3;
+    --pink-500: #d96b9a;
+    --pink-600: #c75487;
+    --pink-700: #a63f6d;
+
+    --white: #ffffff;
+    --gray-100: #f8f9fa;
+    --gray-200: #ececec;
+    --gray-300: #d9d9d9;
+    --gray-500: #8b8b95;
+    --gray-700: #4b4b55;
+    --gray-900: #2f2f36;
+
+    --shadow-soft: 0 8px 24px rgba(180, 110, 145, 0.10);
+    --radius-lg: 18px;
+    --radius-md: 12px;
+}
+
 html {
-  font-size: 14px;
+    font-size: 14px;
 }
 
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-}
-
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
-}
-
-html {
-  position: relative;
-  min-height: 100%;
+    html {
+        font-size: 16px;
+    }
 }
 
 body {
-  margin-bottom: 60px;
+    background: linear-gradient(180deg, var(--pink-50) 0%, #fffdff 100%);
+    color: var(--gray-900);
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Glavni sadržaj */
+.container {
+    max-width: 1150px;
+}
+
+main.pb-3 {
+    padding-top: 1rem;
+}
+
+/* Navbar */
+.navbar {
+    background-color: rgba(255, 255, 255, 0.92) !important;
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--pink-200) !important;
+    box-shadow: 0 4px 18px rgba(180, 110, 145, 0.08);
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: var(--pink-700) !important;
+}
+
+.nav-link {
+    color: var(--gray-700) !important;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+    color: var(--pink-600) !important;
+}
+
+/* Naslovi */
+h1, h2, h3, h4, h5 {
+    color: var(--gray-900);
+    font-weight: 700;
+}
+
+h1 {
+    margin-bottom: 1.25rem;
+}
+
+/* Kartice i blokovi */
+.card {
+    border: 1px solid var(--pink-200);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-soft);
+    background-color: var(--white);
+}
+
+.card-title {
+    color: var(--pink-700);
+    font-weight: 700;
+}
+
+/* Tablice */
+.table {
+    background-color: var(--white);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-soft);
+}
+
+.table thead th {
+    background-color: var(--pink-100);
+    color: var(--gray-900);
+    border-bottom: 1px solid var(--pink-200);
+    font-weight: 700;
+}
+
+.table td,
+.table th {
+    vertical-align: middle;
+    padding: 0.9rem;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) > * {
+    background-color: #fffafb;
+}
+
+.table-bordered > :not(caption) > * > * {
+    border-color: var(--pink-200);
+}
+
+
+/* Forme */
+form {
+    background-color: var(--white);
+    padding: 1.4rem;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-soft);
+    border: 1px solid var(--pink-200);
+}
+
+.form-control,
+.form-select {
+    border-radius: var(--radius-md);
+    border: 1px solid var(--gray-300);
+    padding: 0.75rem 0.9rem;
+    box-shadow: none !important;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--pink-400);
+    box-shadow: 0 0 0 0.2rem rgba(217, 107, 154, 0.18) !important;
+}
+
+.form-label {
+    font-weight: 600;
+    color: var(--gray-700);
+    margin-bottom: 0.4rem;
+}
+
+/* Gumbi */
+.btn {
+    border-radius: 12px;
+    font-weight: 600;
+    padding: 0.6rem 1rem;
+    transition: all 0.2s ease;
+}
+
+.btn-primary {
+    background-color: var(--pink-600);
+    border-color: var(--pink-600);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: var(--pink-700);
+    border-color: var(--pink-700);
+}
+
+.btn-outline-primary {
+    color: var(--pink-700);
+    border-color: var(--pink-400);
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:focus {
+    background-color: var(--pink-600);
+    border-color: var(--pink-600);
+    color: var(--white);
+}
+
+.btn-secondary,
+.btn-outline-secondary {
+    border-radius: 12px;
+}
+
+.btn-secondary {
+    background-color: var(--gray-500);
+    border-color: var(--gray-500);
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+    background-color: var(--gray-700);
+    border-color: var(--gray-700);
+}
+
+.btn-warning {
+    background-color: #f3bfd3;
+    border-color: #f3bfd3;
+    color: var(--gray-900);
+}
+
+.btn-warning:hover,
+.btn-warning:focus {
+    background-color: #eba5c3;
+    border-color: #eba5c3;
+    color: var(--gray-900);
+}
+
+.btn-danger {
+    background-color: #c86b8b;
+    border-color: #c86b8b;
+}
+
+.btn-danger:hover,
+.btn-danger:focus {
+    background-color: #b25375;
+    border-color: #b25375;
+}
+
+.btn-info {
+    background-color: #f6d9e6;
+    border-color: #f6d9e6;
+    color: var(--gray-900);
+}
+
+.btn-info:hover,
+.btn-info:focus {
+    background-color: #efbfd5;
+    border-color: #efbfd5;
+    color: var(--gray-900);
+}
+
+/* Alert poruke */
+.alert {
+    border-radius: var(--radius-md);
+    border: none;
+    box-shadow: var(--shadow-soft);
+}
+
+.alert-info {
+    background-color: #fcebf3;
+    color: #7e3f59;
+}
+
+.alert-danger {
+    background-color: #fde2ea;
+    color: #8d3557;
+}
+
+.alert-warning {
+    background-color: #fff1f5;
+    color: #8b4962;
+}
+
+.alert-secondary {
+    background-color: #f8f3f5;
+    color: var(--gray-700);
+}
+
+
+
+/* Linkovi */
+a {
+    color: var(--pink-700);
+}
+
+a:hover {
+    color: var(--pink-600);
+}
+
+/* Početna stranica - korisno za gumbe/sekcije */
+.home-hero {
+    background: var(--white);
+    border: 1px solid var(--pink-200);
+    border-radius: 24px;
+    padding: 2rem;
+    box-shadow: var(--shadow-soft);
+    text-align: center;
+}
+
+.home-hero h1 {
+    color: var(--pink-700);
+}
+
+.home-actions {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+}
+
+html {
+    min-height: 100%;
+}
+
+body {
+    min-height: 100vh;
+}
+
+main {
+    display: block;
+}
+
+.selected-row > td {
+    background-color: #f8dfe9 !important;
+}
+
+.detail-row > td {
+    background-color: #fffafb !important;
+    border-top: 1px solid var(--pink-200);
+}
+
+.detail-box {
+    padding: 1.5rem;
 }
