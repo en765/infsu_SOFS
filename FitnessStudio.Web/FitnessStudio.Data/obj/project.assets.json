@@ -376,19 +376,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/enesek/.nuget/packages/": {}
+    "C:\\Users\\work\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/enesek/Documents/infsus/infsu_SOFS/FitnessStudio.Web/FitnessStudio.Data/FitnessStudio.Data.csproj",
+      "projectUniqueName": "C:\\Users\\work\\OneDrive\\Dokumenti\\GitHub\\new\\infsu_SOFS\\FitnessStudio.Web\\FitnessStudio.Data\\FitnessStudio.Data.csproj",
       "projectName": "FitnessStudio.Data",
-      "projectPath": "/Users/enesek/Documents/infsus/infsu_SOFS/FitnessStudio.Web/FitnessStudio.Data/FitnessStudio.Data.csproj",
-      "packagesPath": "/Users/enesek/.nuget/packages/",
-      "outputPath": "/Users/enesek/Documents/infsus/infsu_SOFS/FitnessStudio.Web/FitnessStudio.Data/obj/",
+      "projectPath": "C:\\Users\\work\\OneDrive\\Dokumenti\\GitHub\\new\\infsu_SOFS\\FitnessStudio.Web\\FitnessStudio.Data\\FitnessStudio.Data.csproj",
+      "packagesPath": "C:\\Users\\work\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\work\\OneDrive\\Dokumenti\\GitHub\\new\\infsu_SOFS\\FitnessStudio.Web\\FitnessStudio.Data\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/enesek/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\work\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -400,8 +400,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/Users/enesek/Documents/infsus/infsu_SOFS/FitnessStudio.Web/FitnessStudio.Domain/FitnessStudio.Domain.csproj": {
-              "projectPath": "/Users/enesek/Documents/infsus/infsu_SOFS/FitnessStudio.Web/FitnessStudio.Domain/FitnessStudio.Domain.csproj"
+            "C:\\Users\\work\\OneDrive\\Dokumenti\\GitHub\\new\\infsu_SOFS\\FitnessStudio.Web\\FitnessStudio.Domain\\FitnessStudio.Domain.csproj": {
+              "projectPath": "C:\\Users\\work\\OneDrive\\Dokumenti\\GitHub\\new\\infsu_SOFS\\FitnessStudio.Web\\FitnessStudio.Domain\\FitnessStudio.Domain.csproj"
             }
           }
         }
@@ -415,7 +415,8 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      }
+      },
+      "SdkAnalysisLevel": "9.0.100"
     },
     "frameworks": {
       "net8.0": {
@@ -445,12 +446,26 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[8.0.11, 8.0.11]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[8.0.11, 8.0.11]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[8.0.11, 8.0.11]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.405/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
