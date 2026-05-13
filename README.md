@@ -147,11 +147,11 @@ Moguće je i kopirati tekst iz create_tables.pdf i insert_data.pdf koji su prilo
 
 ## Podešavanje connection stringa
 
-Aplikacija koristi connection string definiran u konfiguraciji.
+Aplikacija koristi connection string definiran u konfiguraciji (appsettings.json)
 
 Preporučuje se lokalno postaviti datoteku:
 
-- `FitnessStudio.Web/appsettings.Development.json`
+- `FitnessStudio.Web/appsettings.json`
 
 Primjer sadržaja:
 
@@ -167,6 +167,7 @@ Potrebno je zamijeniti:
 
 * YOUR_USERNAME stvarnim PostgreSQL korisničkim imenom
 * YOUR_PASSWORD stvarnom lozinkom
+* Port stvarnim portom koji koristi server vaše baze podataka
 
 primjer lokalnog connection stringa:
 
