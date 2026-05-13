@@ -276,7 +276,7 @@ Testovi se pokreću iz terminala iz root mape rješenja naredbom:
 
 ```bash
 dotnet test
-
+```
 
 Nakon pokretanja u terminalu se prikazuje:
 - broj ukupnih testova
