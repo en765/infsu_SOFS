@@ -8,11 +8,11 @@ namespace FitnessStudio.Web.ViewModels
     {
         public int ClanarinaId { get; set; }
 
-        [Required(ErrorMessage = "Član je obavezan.")]
-        public int ClanId { get; set; }
+        [Required(ErrorMessage = "Potrebno je odabrati člana.")]
+        public int? ClanId { get; set; }
 
-        [Required(ErrorMessage = "Paket je obavezan.")]
-        public int PaketId { get; set; }
+        [Required(ErrorMessage = "Potrebno je odabrati paket.")]
+        public int? PaketId { get; set; }
 
         [Required(ErrorMessage = "Datum početka je obavezan.")]
         [DataType(DataType.Date)]

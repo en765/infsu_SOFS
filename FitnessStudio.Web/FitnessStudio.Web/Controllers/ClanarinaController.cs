@@ -106,8 +106,8 @@ namespace FitnessStudio.Web.Controllers
 
             var clanarina = new Clanarina
             {
-                ClanId = model.ClanId,
-                PaketId = model.PaketId,
+                ClanId = model.ClanId!.Value,
+                PaketId = model.PaketId!.Value,
                 DatumPocetka = model.DatumPocetka,
                 DatumZavrsetka = model.DatumZavrsetka,
                 Status = model.Status
@@ -158,8 +158,8 @@ namespace FitnessStudio.Web.Controllers
             var clanarina = new Clanarina
             {
                 ClanarinaId = model.ClanarinaId,
-                ClanId = model.ClanId,
-                PaketId = model.PaketId,
+                ClanId = model.ClanId!.Value,
+                PaketId = model.PaketId!.Value,
                 DatumPocetka = model.DatumPocetka,
                 DatumZavrsetka = model.DatumZavrsetka,
                 Status = model.Status
