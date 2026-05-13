@@ -5,21 +5,6 @@
 Web aplikacija za upravljanje paketima, članarinama i uplatama u fitness studiju.  
 Projekt je izrađen u ASP.NET Core MVC tehnologiji, koristi PostgreSQL bazu podataka i organiziran je prema troslojnoj arhitekturi.
 
-## Sadržaj
-
-- [Opis projekta](#opis-projekta)
-- [Tehnologije](#tehnologije)
-- [Struktura projekta](#struktura-projekta)
-- [Preduvjeti](#preduvjeti)
-- [Preuzimanje projekta](#preuzimanje-projekta)
-- [Potrebni NuGet paketi](#potrebni-nuget-paketi)
-- [Postavljanje baze podataka](#postavljanje-baze-podataka)
-- [Podešavanje connection stringa](#podešavanje-connection-stringa)
-- [Pokretanje aplikacije](#pokretanje-aplikacije)
-- [Dostupne stranice](#dostupne-stranice)
-- [Trenutno implementirano](#trenutno-implementirano)
-- [Napomene za lokalni rad u paru](#napomene-za-lokalni-rad-u-paru)
-
 ## Opis projekta
 
 Projekt predstavlja dio informacijskog sustava za upravljanje fitness studijom.  
@@ -73,6 +58,13 @@ Provjera je li .NET instaliran:
 ```bash
 dotnet --version
 ```
+
+Provjera Git instalacije
+
+```bash
+git --version
+```
+
 ## Preuzimanje projekta
 
 Kloniranje repozitorija:
@@ -84,6 +76,12 @@ cd <IME_MAPE_PROJEKTA>
 Ako se projekt preuzima kao ZIP arhiva, potrebno ga je raspakirati i otvoriti u željenom razvojnom okruženju.
 
 Nakon preuzimanja projekta preporučuje se otvoriti solution ili root mapu projekta u razvojnom okruženju, primjerice Visual Studio ili Visual Studio Code.
+
+Nakon preuzimanja projekta potrebno je obnoviti NuGet pakete:
+
+```bash
+dotnet restore
+```
 
 ## Potrebni NuGet paketi
 
@@ -117,6 +115,10 @@ dotnet add FitnessStudio.Data/FitnessStudio.Data.csproj package Microsoft.Extens
 
 ### 1. Kreiranje baze
 
+Za pokretanje aplikacije potrebno je koristiti aktualnu verziju baze podataka priloženu uz ovu zadaću.
+
+> **Napomena:** Za pokretanje i testiranje ove verzije aplikacije potrebno je koristiti aktualne SQL skripte priložene uz ovu zadaću. Tijekom implementacije uvedene su određene izmjene u odnosu na raniju verziju baze podataka, pa starije skripte nisu predviđene za ovu verziju rješenja.
+
 Potrebno je lokalno kreirati PostgreSQL bazu podataka naziva:
 
 - `fitness_studio`
@@ -128,37 +130,20 @@ CREATE DATABASE fitness_studio;
 ```
 ### 2. Pokretanje SQL skripti
 
-Nakon kreiranja baze potrebno je pokrenuti SQL skripte:
+Potrebne su dvije skripte:
 
-1. skriptu za kreiranje tablica  
-2. skriptu za inicijalno punjenje baze podacima  
+* create_tables.sql — skripta za kreiranje baze podataka i tablica
+* insert_data.sql — skripta za punjenje baze oglednim podacima
 
-Redoslijed izvršavanja:
+Koraci postavljanja baze
 
-1. `create_tables.sql`
-2. `insert_data.sql`
+1. Pokrenuti PostgreSQL server.
+2. U pgAdminu ili drugom PostgreSQL alatu kreirati novu bazu podataka, npr. fitness_studio.
+3. Otvoriti Query Tool nad tom bazom.
+4. Pokrenuti skriptu create_tables.sql.
+5. Nakon toga pokrenuti skriptu insert_data.sql.
 
-Skripte se mogu pokrenuti kroz:
-
-- **pgAdmin Query Tool**
-- `psql`
-- ili drugi PostgreSQL alat
-
-### 3. Očekivane tablice
-
-Za trenutnu verziju aplikacije posebno su važne sljedeće tablice:
-
-- `Clan`
-- `Paket`
-- `Clanarina`
-- `Uplata`
-
-Te tablice koriste se za:
-
-- prikaz paketa
-- odabir članova
-- evidenciju članarina
-- evidenciju uplata
+Moguće je i kopirati tekst iz create_tables.pdf i insert_data.pdf koji su priloženi u predaji 3. domaće zadaće te ih pokrenuti u PostgreSQL Query Toolu.
 
 ## Podešavanje connection stringa
 
@@ -194,7 +179,13 @@ primjer lokalnog connection stringa:
 ```
 ## Pokretanje aplikacije
 
-Aplikacija se pokreće iz web projekta naredbom:
+Prije pokretanja preporučuje se provjeriti da se projekt uspješno prevodi:
+
+```bash
+dotnet build
+```
+
+Aplikacija se pokreće iz root mape projekta naredbom:
 
 ```bash
 dotnet run --project FitnessStudio.Web
@@ -204,6 +195,19 @@ Nakon pokretanja aplikacija će biti dostupna na lokalnoj adresi koju terminal i
 * http://localhost:5287
 
 Ako se aplikacija uspješno pokrene, moguće je otvoriti početnu stranicu i dalje navigirati prema ostalim dijelovima sustava.
+
+## Funkcionalnosti implementirane u ovoj verziji
+
+U ovoj verziji sustava implementirano je:
+
+- šifrarnik paketa
+- master-detail prikaz članarina i uplata
+- CRUD operacije nad paketima
+- CRUD operacije nad članarinama
+- CRUD operacije nad uplatama
+- pretraživanje podataka
+- validacija poslovnih pravila
+- rad s povezanim podacima putem padajućih izbornika
 
 ## Dostupne stranice
 
@@ -215,38 +219,3 @@ Nakon uspješnog pokretanja aplikacije dostupne su sljedeće stranice:
 
 Početna stranica sadrži osnovnu navigaciju prema glavnim dijelovima sustava.
 
-## Trenutno implementirano
-
-Trenutna verzija aplikacije omogućuje:
-
-- pokretanje lokalne ASP.NET Core MVC aplikacije
-- spajanje na PostgreSQL bazu
-- dohvat i prikaz paketa iz baze
-- pretraživanje paketa po nazivu
-- osnovnu početnu stranicu s navigacijom
-- osnovu za daljnju implementaciju master-detail prikaza članarina i uplata
-
-Do sada je implementiran prvi funkcionalni prolaz kroz sustav:
-
-- web sloj prima zahtjev
-- business sloj obrađuje zahtjev
-- data sloj dohvaća podatke iz baze
-- rezultat se prikazuje korisniku
-
-## Napomene za lokalni rad u paru
-
-Projekt je moguće razvijati u paru tako da obje osobe koriste isti izvorni kod, ali različite lokalne PostgreSQL postavke.
-
-To znači da svaki član tima može imati:
-
-- vlastiti PostgreSQL korisnički račun
-- vlastitu lozinku
-- vlastiti lokalni connection string
-
-Važno je samo da:
-
-- baza ima isti naziv: `fitness_studio`
-- pokrenute su iste SQL skripte
-- struktura tablica i podataka odgovara projektu
-
-Dakle, kod aplikacije ostaje isti, a razlikuje se samo lokalni connection string.
