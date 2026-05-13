@@ -43,7 +43,7 @@ Projekt je organiziran kroz više projekata unutar jednog solutiona:
   Sadrži modele podataka koje koriste ostali slojevi.
 
 - `FitnessStudio.Tests`  
-  Projekt predviđen za testove. Trenutno nije dokumentiran u ovim uputama.
+  Sadrži testove za poslovnu logiku sustava (paketi, članarine, uplate) i integracijski test za provjeru rada cijelog sustava.
 
 ## Preduvjeti
 
