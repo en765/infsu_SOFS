@@ -9,81 +9,81 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = FitnessStudio.Web
 build_property.RootNamespace = FitnessStudio.Web
-build_property.ProjectDir = c:\Users\work\OneDrive\Dokumenti\GitHub\new\infsu_SOFS\FitnessStudio.Web\FitnessStudio.Web\
+build_property.ProjectDir = C:\Users\work\OneDrive\Dokumenti\GitHub\new\infsu_SOFS\FitnessStudio.Web\FitnessStudio.Web\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = c:\Users\work\OneDrive\Dokumenti\GitHub\new\infsu_SOFS\FitnessStudio.Web\FitnessStudio.Web
+build_property.MSBuildProjectDirectory = C:\Users\work\OneDrive\Dokumenti\GitHub\new\infsu_SOFS\FitnessStudio.Web\FitnessStudio.Web
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
-[c:/Users/work/OneDrive/Dokumenti/GitHub/new/infsu_SOFS/FitnessStudio.Web/FitnessStudio.Web/Views/Clanarina/Create.cshtml]
+[C:/Users/work/OneDrive/Dokumenti/GitHub/new/infsu_SOFS/FitnessStudio.Web/FitnessStudio.Web/Views/Clanarina/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xhbmFyaW5hXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/work/OneDrive/Dokumenti/GitHub/new/infsu_SOFS/FitnessStudio.Web/FitnessStudio.Web/Views/Clanarina/CreateUplata.cshtml]
+[C:/Users/work/OneDrive/Dokumenti/GitHub/new/infsu_SOFS/FitnessStudio.Web/FitnessStudio.Web/Views/Clanarina/CreateUplata.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xhbmFyaW5hXENyZWF0ZVVwbGF0YS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/work/OneDrive/Dokumenti/GitHub/new/infsu_SOFS/FitnessStudio.Web/FitnessStudio.Web/Views/Clanarina/Delete.cshtml]
+[C:/Users/work/OneDrive/Dokumenti/GitHub/new/infsu_SOFS/FitnessStudio.Web/FitnessStudio.Web/Views/Clanarina/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xhbmFyaW5hXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/work/OneDrive/Dokumenti/GitHub/new/infsu_SOFS/FitnessStudio.Web/FitnessStudio.Web/Views/Clanarina/DeleteUplata.cshtml]
+[C:/Users/work/OneDrive/Dokumenti/GitHub/new/infsu_SOFS/FitnessStudio.Web/FitnessStudio.Web/Views/Clanarina/DeleteUplata.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xhbmFyaW5hXERlbGV0ZVVwbGF0YS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/work/OneDrive/Dokumenti/GitHub/new/infsu_SOFS/FitnessStudio.Web/FitnessStudio.Web/Views/Clanarina/Edit.cshtml]
+[C:/Users/work/OneDrive/Dokumenti/GitHub/new/infsu_SOFS/FitnessStudio.Web/FitnessStudio.Web/Views/Clanarina/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xhbmFyaW5hXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/work/OneDrive/Dokumenti/GitHub/new/infsu_SOFS/FitnessStudio.Web/FitnessStudio.Web/Views/Clanarina/EditUplata.cshtml]
+[C:/Users/work/OneDrive/Dokumenti/GitHub/new/infsu_SOFS/FitnessStudio.Web/FitnessStudio.Web/Views/Clanarina/EditUplata.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xhbmFyaW5hXEVkaXRVcGxhdGEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/work/OneDrive/Dokumenti/GitHub/new/infsu_SOFS/FitnessStudio.Web/FitnessStudio.Web/Views/Clanarina/Index.cshtml]
+[C:/Users/work/OneDrive/Dokumenti/GitHub/new/infsu_SOFS/FitnessStudio.Web/FitnessStudio.Web/Views/Clanarina/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xhbmFyaW5hXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/work/OneDrive/Dokumenti/GitHub/new/infsu_SOFS/FitnessStudio.Web/FitnessStudio.Web/Views/Home/Index.cshtml]
+[C:/Users/work/OneDrive/Dokumenti/GitHub/new/infsu_SOFS/FitnessStudio.Web/FitnessStudio.Web/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/work/OneDrive/Dokumenti/GitHub/new/infsu_SOFS/FitnessStudio.Web/FitnessStudio.Web/Views/Paket/Create.cshtml]
+[C:/Users/work/OneDrive/Dokumenti/GitHub/new/infsu_SOFS/FitnessStudio.Web/FitnessStudio.Web/Views/Paket/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFrZXRcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/work/OneDrive/Dokumenti/GitHub/new/infsu_SOFS/FitnessStudio.Web/FitnessStudio.Web/Views/Paket/Delete.cshtml]
+[C:/Users/work/OneDrive/Dokumenti/GitHub/new/infsu_SOFS/FitnessStudio.Web/FitnessStudio.Web/Views/Paket/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFrZXRcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/work/OneDrive/Dokumenti/GitHub/new/infsu_SOFS/FitnessStudio.Web/FitnessStudio.Web/Views/Paket/Edit.cshtml]
+[C:/Users/work/OneDrive/Dokumenti/GitHub/new/infsu_SOFS/FitnessStudio.Web/FitnessStudio.Web/Views/Paket/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFrZXRcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/work/OneDrive/Dokumenti/GitHub/new/infsu_SOFS/FitnessStudio.Web/FitnessStudio.Web/Views/Paket/Index.cshtml]
+[C:/Users/work/OneDrive/Dokumenti/GitHub/new/infsu_SOFS/FitnessStudio.Web/FitnessStudio.Web/Views/Paket/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFrZXRcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/work/OneDrive/Dokumenti/GitHub/new/infsu_SOFS/FitnessStudio.Web/FitnessStudio.Web/Views/Shared/Error.cshtml]
+[C:/Users/work/OneDrive/Dokumenti/GitHub/new/infsu_SOFS/FitnessStudio.Web/FitnessStudio.Web/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/work/OneDrive/Dokumenti/GitHub/new/infsu_SOFS/FitnessStudio.Web/FitnessStudio.Web/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/work/OneDrive/Dokumenti/GitHub/new/infsu_SOFS/FitnessStudio.Web/FitnessStudio.Web/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/work/OneDrive/Dokumenti/GitHub/new/infsu_SOFS/FitnessStudio.Web/FitnessStudio.Web/Views/_ViewImports.cshtml]
+[C:/Users/work/OneDrive/Dokumenti/GitHub/new/infsu_SOFS/FitnessStudio.Web/FitnessStudio.Web/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/work/OneDrive/Dokumenti/GitHub/new/infsu_SOFS/FitnessStudio.Web/FitnessStudio.Web/Views/_ViewStart.cshtml]
+[C:/Users/work/OneDrive/Dokumenti/GitHub/new/infsu_SOFS/FitnessStudio.Web/FitnessStudio.Web/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/work/OneDrive/Dokumenti/GitHub/new/infsu_SOFS/FitnessStudio.Web/FitnessStudio.Web/Views/Shared/_Layout.cshtml]
+[C:/Users/work/OneDrive/Dokumenti/GitHub/new/infsu_SOFS/FitnessStudio.Web/FitnessStudio.Web/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-h59n4vu9c4
