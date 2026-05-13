@@ -220,3 +220,60 @@ Nakon uspješnog pokretanja aplikacije dostupne su sljedeće stranice:
 
 Početna stranica sadrži osnovnu navigaciju prema glavnim dijelovima sustava.
 
+## Testiranje
+
+U projektu su implementirani unit testovi koji provjeravaju poslovnu logiku sustava te jedan integracijski test koji provjerava ispravnu interakciju više komponenti (servisi, baza podataka).
+
+Testovi se nalaze u projektu:
+
+- `FitnessStudio.Tests`
+
+UplataServiceTests.cs
+Testira se:
+- uplata mora biti veća od 0
+- uplata mora pripadati postojećoj članarini
+- povezani paket mora postojati
+- ukupni iznos uplata ne smije prijeći cijenu paketa
+- brisanje uplate kada uplata postoji / ne postoji
+- dohvaćanje uplata po ID-u članarine
+
+ClanarinaServiceTests.cs
+Testira se:
+- članarina se može kreirati samo ako član postoji
+- članarina se može kreirati samo ako paket postoji
+- datum početka mora biti prije datuma završetka
+- validacija osnovnih poslovnih pravila prije spremanja
+
+PaketServiceTests.cs
+Testira se:
+- dohvaćanje svih paketa iz baze
+- naziv paketa ne smije biti prazan
+- ne smije postojati paket s istim nazivom
+- uspješno kreiranje valjanog paketa
+- brisanje paketa koji ne postoji vraća grešku
+
+PaketIntegrationTests.cs
+Testira se:
+- dohvaćanje paketa iz stvarne baze podataka
+- kompletan CRUD flow:
+  - kreiranje novog paketa u bazi
+  - dohvaćanje spremljenog paketa po nazivu
+  - ažuriranje paketa u bazi
+  - brisanje paketa iz baze
+- provjera da se podaci ispravno spremaju i čitaju kroz sve slojeve aplikacije
+---
+
+Testovi su pisani kao unit testovi, što znači da se servisi testiraju izolirano uz korištenje mock objekata za repository sloj.  
+Integracijski test koristi stvarnu bazu podataka i testira cijeli sustav.
+
+## Pokretanje testova
+
+Testovi se pokreću iz terminala iz root mape rješenja naredbom:
+
+```bash
+dotnet test
+
+Nakon pokretanja u terminalu se prikazuje:
+- broj ukupnih testova
+- broj uspješnih i neuspješnih testova
+- trajanje izvršavanja testova
