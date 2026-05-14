@@ -272,6 +272,31 @@ Integracijski test koristi stvarnu bazu podataka i testira cijeli sustav.
 
 ## Pokretanje testova
 
+Prije pokretanja integracijskih testova potrebno je u datoteci:
+
+- `FitnessStudio.Tests/Integration/PaketIntegrationTests.cs`
+
+prilagoditi connection string vlastitoj lokalnoj PostgreSQL konfiguraciji.
+
+Primjer:
+
+```csharp
+
+{
+
+    "ConnectionStrings:DefaultConnection",
+
+    "Host=localhost;Port=5432;Database=fitness_studio;Username=moje_ime;Password=moja_lozinka"
+
+}
+```
+Potrebno je prilagoditi sljedeće vrijednosti:
+
+* Port — port na kojem je pokrenut vaš PostgreSQL server
+* Database — naziv vaše lokalne baze podataka
+* Username — korisničko ime PostgreSQL korisnika
+* Password — lozinka PostgreSQL korisnika
+  
 Testovi se pokreću iz terminala iz root mape rješenja naredbom:
 
 ```bash
