@@ -17,7 +17,7 @@ namespace FitnessStudio.Tests.Integration
 {
     {
         "ConnectionStrings:DefaultConnection",
-        "Host=localhost;Port=5433;Database=fitness_studio;Username=postgres;Password=bazepodataka"
+        "Host=localhost;Port=5432;Database=fitness_studio;Username=postgres;Password=bazepodataka"
     }
 };
 
